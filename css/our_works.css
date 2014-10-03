@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.section-container {
+  overflow: hidden;
+}
+
+ul.elliptic-text {
+  list-style-type: none; 
+  line-height: 150%;    
+}
+
+p {
+  font-size: 115%;
+  letter-spacing:0.1em;
+  line-height: 150%;
+}
+
+h2 {
+	font-size: 200%;
+	letter-spacing: 0.1em;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 115%;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	line-height: 150%;
+}
+
+h4 {
+	font-size: 85%;
+	letter-spacing: 0.1em;
+	font-weight: normal;
+	line-height: 150%;
+}
+
+#our_works .left_contents {
+	width: 50%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+	z-index: 2;
+}
+
+#our_works .right_contents {
+	width: 60%;
+	position: absolute;
+  top: 20%;
+  left: -10%;
+	z-index: 1;
+	padding: 0;
+	text-align: left;
+	line-height:10%;
+}
+
+
+/***********************************
+ * css for 3D image gallery
+ ***********************************/
+ 
+#gallery .slide-container h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#gallery .slide-container .gallery_top{
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+
+#gallery .slide-container .gallery_container {
+/*   margin: 4% auto; */
+  position: absolute;
+  top: 60%;
+  left: 75%;
+  perspective: 1000;
+  width: 400px;
+  height: 400px;
+}
+
+/*perspective …… 3D変形の奥行きの深さを指定する（親要素に指定）*/
+/*.gallery_container{
+	width: 700px;
+	height:700px;
+}*/
+	
+	
+
+#gallery #carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: rotation 20s infinite linear;
+     -moz-animation: rotation 20s infinite linear;
+      -ms-animation: rotation 20s infinite linear;
+       -o-animation: rotation 20s infinite linear;
+          animation: rotation 20s infinite linear;
+}
+
+#gallery #carousel:hover {
+  -webkit-animation-play-state: paused;
+     -moz-animation-play-state: paused;
+      -ms-animation-play-state: paused;
+       -o-animation-play-state: paused;
+          animation-play-state: paused;
+}
+/*paused=一時停止*/
+
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 120px;
+	left: 20px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border-radius: 100%;
+}
+
+#gallery #carousel figure:nth-child(1) {
+  -webkit-transform: rotateY(0deg)   translateZ(288px);
+     -moz-transform: rotateY(0deg)   translateZ(288px);
+      -ms-transform: rotateY(0deg)   translateZ(288px);
+       -o-transform: rotateY(0deg)   translateZ(288px);
+          transform: rotateY(0deg)   translateZ(288px);
+}
+#gallery #carousel figure:nth-child(2) {
+  -webkit-transform: rotateY(40deg)   translateZ(288px);
+     -moz-transform: rotateY(40deg)   translateZ(288px);
+      -ms-transform: rotateY(40deg)   translateZ(288px);
+       -o-transform: rotateY(40deg)   translateZ(288px);
+          transform: rotateY(40deg)   translateZ(288px);
+}
+#gallery #carousel figure:nth-child(3) {
+  -webkit-transform: rotateY(80deg)   translateZ(288px);
+     -moz-transform: rotateY(80deg)   translateZ(288px);
+      -ms-transform: rotateY(80deg)   translateZ(288px);
+       -o-transform: rotateY(80deg)   translateZ(288px);
+          transform: rotateY(80deg)   translateZ(288px);
+}
+#gallery #carousel figure:nth-child(4) {
+  -webkit-transform: rotateY(120deg)   translateZ(288px);
+     -moz-transform: rotateY(120deg)   translateZ(288px);
+      -ms-transform: rotateY(120deg)   translateZ(288px);
+       -o-transform: rotateY(120deg)   translateZ(288px);
+          transform: rotateY(120deg)   translateZ(288px);
+}
+#gallery #carousel figure:nth-child(5) {
+  -webkit-transform: rotateY(160deg)   translateZ(288px);
+     -moz-transform: rotateY(160deg)   translateZ(288px);
+      -ms-transform: rotateY(160deg)   translateZ(288px);
+       -o-transform: rotateY(160deg)   translateZ(288px);
+          transform: rotateY(160deg)   translateZ(288px);
+}
+#gallery #carousel figure:nth-child(6) {
+  -webkit-transform: rotateY(200deg)   translateZ(288px);
+     -moz-transform: rotateY(200deg)   translateZ(288px);
+      -ms-transform: rotateY(200deg)   translateZ(288px);
+       -o-transform: rotateY(200deg)   translateZ(288px);
+          transform: rotateY(200deg)   translateZ(288px);
+}
+#gallery #carousel figure:nth-child(7) {
+  -webkit-transform: rotateY(240deg)   translateZ(288px);
+     -moz-transform: rotateY(240deg)   translateZ(288px);
+      -ms-transform: rotateY(240deg)   translateZ(288px);
+       -o-transform: rotateY(240deg)   translateZ(288px);
+          transform: rotateY(240deg)   translateZ(288px);
+}
+#gallery #carousel figure:nth-child(8) {
+  -webkit-transform: rotateY(280deg)   translateZ(288px);
+     -moz-transform: rotateY(280deg)   translateZ(288px);
+      -ms-transform: rotateY(280deg)   translateZ(288px);
+       -o-transform: rotateY(280deg)   translateZ(288px);
+          transform: rotateY(280deg)   translateZ(288px);
+}
+#gallery #carousel figure:nth-child(9) {
+  -webkit-transform: rotateY(320deg)   translateZ(288px);
+     -moz-transform: rotateY(320deg)   translateZ(288px);
+      -ms-transform: rotateY(320deg)   translateZ(288px);
+       -o-transform: rotateY(320deg)   translateZ(288px);
+          transform: rotateY(320deg)   translateZ(288px);
+}
+
+#gallery img{
+  -webkit-filter: grayscale(1);
+     -moz-filter: grayscale(1);
+      -ms-filter: grayscale(1);
+       -o-filter: grayscale(1);
+          filter: grayscale(1);
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+       -o-transition: all .5s ease;
+          transition: all .5s ease;
+}
+
+/*ease=開始と終了を滑らかに*/
+
+#gallery img:hover {
+  -webkit-filter: grayscale(0);
+     -moz-filter: grayscale(0);
+      -ms-filter: grayscale(0);
+       -o-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.2,1.2);
+     -moz-transform: scale(1.2,1.2);
+      -ms-transform: scale(1.2,1.2);
+       -o-transform: scale(1.2,1.2);
+          transform: scale(1.2,1.2);
+}
+/*transform:scale() …… 要素を拡大・縮小表示する
+scale()関数では、2つの数値で2D縮尺比率を指定します。
+1つ目の数値はX方向、2つ目の数値はY方向の比率です。
+2つ目の数値は省略することができますが、この場合には最初の値と同じになります。*/
+
+/*grayscale=グレースケール*/
+
+@keyframes rotation {
+  from{
+    -webkit-transform: rotateY(0deg);
+       -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+         -o-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to{
+    -webkit-transform: rotateY(360deg);
+       -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+         -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+
+#gallery * {
+  outline: none;
+  border: none;
+	box-sizing: border-box;
+}
+
+#gallery *:before,
+#gallery *:after {
+	box-sizing: border-box;
+}
+
+#gallery body {
+	background-image: radial-gradient(mintcream 0%, lightgray 100%);
+}
+
+#gallery h1 {
+	display: table;
+	margin: 5% auto 0;
+}
+
+#gallery .container {
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000;
+}
+
+#gallery #carousel {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+
+#gallery #carousel:hover {
+	animation-play-state: paused;
+}
+
+#gallery #carousel figure {
+	display: block;
+	position: absolute;
+	width: 186px;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border:none;
+}
+
+#carousel figure:nth-child(1) { transform: rotateY(0deg)   translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg)  translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg)  translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+#gallery img {
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+#gallery img:hover {
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}

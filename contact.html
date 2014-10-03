@@ -1,0 +1,214 @@
+<!doctype html>
+<!--
+    Type         : HTML5 format
+    file name    : contact.html
+    Author       : Ryota Takao, Yuki Yamashina
+    Template     : Yuki Yamashina
+    Coding style : follows (partially) Google HTML/CSS Style Guide
+                   https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+-->
+<html lang="ja">
+
+  <head>
+
+    <!-- meta info and title part -->
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="UTF-8" />
+    <title>映像制作会社M&amp;F｜問い合わせ </title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="M&F" />
+    <meta name="keywords" content="movie,corporate site" />
+    <meta name="description" content="This is a corporate site of M&F" />
+
+    <!-- load style files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- load JavaScript files -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+      <script type="text/javascript">var console = { log: function() {} };</script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsBgImage: ['images/cb_background.jpg','images/cb_background.jpg'],
+            anchors: ['contact', 'privacy-policy' ],
+            css3: true,
+            scrollOverflow: true
+        });
+    });
+    </script>
+    <script src="js/jquery.bubble.js"></script>
+  </head>
+
+  <body>
+
+    <h1 id="logo">
+      <a href="index.html" title="M&amp;F">
+        <img src="images/logo/logo.png" alt="M&amp;F" />
+      </a>
+    </h1>
+
+    <nav id="gnav">
+      <div class="gnav-item about_us">
+        <img src="images/icon/icon_aboutus_bg.png" alt="bg icon for about us" class="gnav-icon-bg">
+        <a href="aboutus.html" class="gnav-icon"></a>
+        <ul>
+          <li>About Us</li>
+          <li><a href="aboutus.html#concept">コンセプト</a></li>
+          <li><a href="aboutus.html#corporate-information">会社概要</a></li>
+          <li><a href="aboutus.html#recruit">求人</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item our_works">
+        <img src="images/icon/icon_our_works_bg.png" alt="bg icon for our works" class="gnav-icon-bg">
+        <a href="our_works.html" class="gnav-icon"></a>
+        <ul>
+          <li>Our Works</li>
+          <li><a href="our_works.html#our_works">事業実績</a></li>
+          <li><a href="our_works.html#gallery">ギャラリー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item price">
+        <img src="images/icon/icon_price_bg.png" alt="bg icon for price" class="gnav-icon-bg">
+        <a href="price.html" class="gnav-icon"></a>
+        <ul>
+          <li>Price</li>
+          <li><a href="price.html#estimate">お見積もり</a></li>
+          <li><a href="price.html#event">イベント</a></li>
+          <li><a href="price.html#pv">PV作成</a></li>
+          <li><a href="price.html#edit-only">編集のみの場合</a></li>
+          <li><a href="price.html#payment">お支払い</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item flow">
+        <img src="images/icon/icon_flow_bg.png" alt="bg icon for flow" class="gnav-icon-bg">
+        <a href="flow.html" class="gnav-icon"></a>
+        <ul>
+          <li>Flow</li>
+          <li><a href="flow.html#for-client">映像制作</a></li>
+          <li><a href="flow.html#flow">制作の流れ</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item contact">
+        <img src="images/icon/icon_contact_bg.png" alt="bg icon for contact" class="gnav-icon-bg">
+        <a href="contact.html" class="gnav-icon"></a>
+        <ul>
+          <li>Contact</li>
+          <li><a href="contact.html#contact">問い合わせ</a></li>
+          <li><a href="contact.html#privacy-policy">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item sitemap">
+        <img src="images/icon/icon_sitemap_bg.png" alt="bg icon for sitemap" class="gnav-icon-bg">
+        <a href="sitemap.html" class="gnav-icon"></a>
+        <ul>
+          <li>Sitemap</li>
+          <li><a href="sitemap.html#sitemap">サイトマップ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div id="fullpage">
+
+      <div class="section">
+        <div class="slide" id="contact">
+          <div class="slide-container">
+            <h1>CONTACT FOAM</h1>
+            <p>
+              「イベントの撮影をお願いしたい」「お店のPVを作りたい」などのお悩みをお持ちの方は、お気軽にご相談ください。<br>
+              その他、サービスや弊社へのお問い合わせに関しては、お電話・お問い合わせフォームよりご連絡ください。<br>
+              折り返しご連絡させて頂きます。
+            </p>
+            <div id="contact-contents">
+              <form action="contact.php?act=conf" method="post" name="sendMsg" />
+              <h3>各種ご相談、お問い合わせ、お見積もりはお気軽にこちらまで</h3>
+              <p class="input-block">
+                <p style="margin:0 0 5px 0;">お名前</p>
+                <input type="hidden" name="title1" value="お名前" />
+                <input type="text" name="name" value="" id="contact-name" class="inputarea" required />
+              </p>
+              <p class="input-block">
+                <p style="margin:0 0 5px 0;">メールアドレス</p>
+                <input type="hidden" name="title2" value="メールアドレス" />
+                <input type="email" name="mail" value="" id="contact-email" class="inputarea" required />
+              </p>
+              <p class="input-block">
+                <p style="margin:0 0 5px 0;">件名</p>
+                <input type="hidden" name="title3" value="件名" />
+                <input type="text" name="subject" value="" id="contact-subject" class="inputarea" />
+              </p>
+              <p class="textarea-block">
+                <p style="margin:0 0 5px 0;">お問い合わせ内容</p>
+                <input type="hidden" name="title4" value="お問い合わせ内容" />
+                <textarea name="message" id="contact-message" cols="88" rows="6" class="inputtextarea" required></textarea>
+              </p>
+              <ul>
+                <li>ご記入いただいた連絡先へ２営業日以内に返答いたします。</li>
+                <li>弊社から連絡がない場合、送信上のトラブルが起こっていることも考えられます。お電話にてご連絡ください。</li>
+                <li>個人情報に関する取扱い：取得した個人情報は、弊社プライバシーポリシーに従って適正に管理します。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" id="privacy-policy">
+          <div class="slide-container">
+            <h1>PRIVACY POLICY</h1>
+            <span>
+              株式会社M&amp;F（以下、「当社」という）は、製品・企業プロモーションをはじめとする映像・webコンテンツ制作を通じて、多くの個人情報を取り扱っています。そこで当社ではこの個人情報保護方針に基づき、個人情報保護マネジメントシステムを確立するとともに実行し、事業活動にかかわる全ての従業員が一体となって個人情報の適切な取り扱いを実現致します。
+            </span>
+            <h3>１．個人情報の適切な取得、利用、提供に関して</h3>
+            <span>
+              当社では、事業の内容及び規模を考慮し、業務遂行に必要な範囲で個人情報を適切な方法で取得します。個人情報の利用は、特定した利用目的の範囲内とし、利用目的を変更する際には、予めご本人に通知し、同意を得た上で行ないます。個人情報は、利用目的を遂行するために業務を委託する場合を除き、ご本人の同意なく第三者に提供することはございません。目的外の利用や提供を防止するため、個人情報の利用及び提供は、個人情報保護に関する内部の統括責任者（個人情報保護管理責任者）が、その適正性を確認した上で行なっています。また、自主点検、内部監査等の活動を通じた統制活動も強化しております。
+            </span>      
+            <h3>２．個人情報保護のための安全管理策</h3>
+            <span>
+              (１)　個人情報の漏えい、滅失、毀損等に対する予防措置<br>
+              当社では、個人情報の漏洩、滅失、毀損等を防止するための適切なセキュリティー対策を実施しております。また、これらを徹底するため、従業員への教育・監督を行なっています。個人情報取扱業務を社外に委託する場合は、委託先の選定や監督を厳重に行なっております。<br>
+              (２)　個人情報の漏えい、滅失、毀損等に対する是正措置<br>
+              個人情報の漏えい、滅失、毀損等が発生した場合は、被害拡大防止を最優先とし、速やかに是正措置を講じるとともに、原因究明を行ない、再発防止に努めます。また、事故に関する情報について、必要な範囲で関係者、関係機関に報告します。
+            </span>
+            <h3>３．法令、国が定める指針、その他の規範の遵守</h3>
+            <span>
+              当社は個人情報に関する法律および関係法令、主務官庁の指針、所属団体等の規範等を遵守します。
+            </span>
+            <h3>４．個人情報保護マネジメントシステムの継続的改善</h3>
+            <p>
+              当社は、個人情報保護に関するマネジメントシステムを実行し、維持するとともに定期的に見直しを行ない、継続的改善に努めます。
+            </p>
+            <h3>５．個人情報に関する苦情、相談への対応</h3>
+            <span>
+              当社に対して、個人情報の取り扱いに関する苦情、相談を行なう場合は、下記の「個人情報お問合せ窓口」までご連絡下さい。また、当社の個人情報保護方針に関するお問い合せに関しても下記にて対応致します。
+            </span>
+            <div class="contact-address">
+              <ul class="contact-address">
+                <li>［個人情報保護に関するお問い合わせ窓口］</li>
+                <li>M&amp;F　個人情報保護事務局</li>
+                <li>〒601-8182 京都市南区上鳥羽北島田町93番</li>
+                <li>TEL：075-682-3900　FAX：075-682-3933　E-Mail: info@m&amp;f.com</li>
+                <li>TELお問い合わせ受付時間　10:00～18:00　土日祝日、年末年始を除く</li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*
+ * this.name    : change.css
+ * Author       : Yuki Yamashina
+ * Coding style : follows Google HTML/CSS Style Guide
+ *                https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+ */
+
+body {
+  width: 98%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 10px 0 10px;
+}
+
+ul,
+ol {
+  margin-left: 40px;
+}
+
+li.white-space {
+  list-style-type: none;
+}
+
+dl {
+  background-color : #fff;
+  line-height : 1;
+  padding: 10px 10px 20px 10px;
+  width : 100%;
+  overflow : auto;
+  font-size: 16px;
+}
+
+dt {
+  float : left;
+  clear : both;
+  border-bottom-width : 4px;
+  border-bottom-style : solid;
+  border-bottom-color : #999999;
+  padding-top : 10px;
+  padding-bottom : 3px;
+  font-weight: bold;
+}
+
+dd {
+  border-bottom-width : 1px;
+  border-bottom-style : solid;
+  border-bottom-color : #999999;    
+  margin-left : 7em;
+  padding-top : 5px;
+  padding-bottom : 3px;
+  padding-left : 1em;
+  margin-right: 3%;
+  line-height: 150%;
+}
+
+.information {
+  margin-top: 30px;
+}
+
+.usage {
+  margin: 30px 0;
+}
+
+.usage > h2 {
+  margin-bottom: 10px;
+}
+
+.usage > h3 {
+  margin-bottom: 10px;
+}
+
+section > p {
+  margin-bottom: 30px;
+}
+
+.coding-rule {
+  margin: 30px 0;
+}
+
+/***********************
+ *  user information
+ ***********************
+ * 自分の色変えたかったら
+ * http://flatuicolors.com
+ * に飛んで、好きな色をクリックするとその色のHEX値がコピーされるから、
+ * それをcolor: の後のところにペーストしてね
+ * でも色かぶっちゃダメよ
+ ***********************/
+.minorin {
+  color: #3498db;
+}
+
+.naochan {
+  color: #f39c12;
+}
+
+.yuki {
+  color: #c0392b;
+}
+
+.takky {
+  color: #9b59b6;
+}
+
+.ryo-chin {
+  color: #1abc9c;
+}

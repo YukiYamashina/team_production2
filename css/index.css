@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v5/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v5/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NotoSans-hinted';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSans-hinted/NotoSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSans-hinted';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/NotoSans-hinted/NotoSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Sabado Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Sabado-Typefamily/Sabado-Regular.otf) format("opentype");
+}
+
+/*
+ * Display size is 1366px - 768px
+ *
+ *
+ */
+/* line 45, ../sass/index.scss */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 50, ../sass/index.scss */
+body {
+  background: linear-gradient(to bottom, #c7f9f4, #e8dbaa);
+}
+
+/* line 54, ../sass/index.scss */
+#viewArea {
+  width: 100%;
+  /*   height: 1536px; */
+  /*   height: 3072px; */
+  height: 3072px;
+  /*   height: 12288px; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 64, ../sass/index.scss */
+#logo {
+  position: absolute;
+  top: 32px;
+  left: 63px;
+  z-index: 100;
+}
+/* line 69, ../sass/index.scss */
+#logo img {
+  width: 100px;
+}
+
+/* line 74, ../sass/index.scss */
+#cloud_top {
+  position: absolute;
+  top: 155px;
+  left: 385px;
+}
+/* line 78, ../sass/index.scss */
+#cloud_top img {
+  width: 304px;
+}
+
+/* line 83, ../sass/index.scss */
+#cloud_bottom {
+  position: absolute;
+  top: 502px;
+  left: 820px;
+}
+/* line 87, ../sass/index.scss */
+#cloud_bottom img {
+  width: 569px;
+}
+
+/* line 92, ../sass/index.scss */
+#our_concept {
+  position: absolute;
+  top: 155px;
+  left: 57px;
+}
+/* line 96, ../sass/index.scss */
+#our_concept #concept_English {
+  font-family: Ubuntu;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 48px;
+}
+/* line 103, ../sass/index.scss */
+#our_concept #concept_Japanese {
+  font-family: NotoSans-hinted;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  line-height: 48px;
+  color: #444;
+}
+
+/* line 113, ../sass/index.scss */
+#tree {
+  width: 310px;
+  height: 439px;
+  position: absolute;
+  bottom: 103px;
+  left: 366.986px;
+}
+
+/* line 121, ../sass/index.scss */
+#apple {
+  width: 60px;
+  height: 71px;
+  position: absolute;
+  top: 3000px;
+  left: -100px;
+  opacity: 0.9;
+}
+
+/* line 130, ../sass/index.scss */
+.fuusen {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 135, ../sass/index.scss */
+#fuusen_concept {
+  width: 133.125px;
+  position: absolute;
+  /*   top: 204px; */
+  top: 2754px;
+  left: 708.82px;
+}
+/* line 141, ../sass/index.scss */
+#fuusen_concept img {
+  width: 100px;
+}
+
+/* line 146, ../sass/index.scss */
+#fuusen_works {
+  width: 257.12px;
+  position: absolute;
+  /*   bottom: 122px; */
+  top: 2622px;
+  left: 822.024px;
+  /*
+    img {
+      width: 200px;
+    }
+  */
+}
+
+/* line 159, ../sass/index.scss */
+#fuusen_heart {
+  width: 73.409px;
+  position: absolute;
+  /*   bottom: 223px; */
+  top: 2753px;
+  left: 441.572px;
+}
+
+/* line 167, ../sass/index.scss */
+#fuusen_price {
+  width: 97.107px;
+  position: absolute;
+  /*   bottom: 228.018px; */
+  top: 2728.018px;
+  left: 518.49px;
+  /*
+    img {
+      width: 150px;
+    }
+  */
+}
+
+/* line 180, ../sass/index.scss */
+#fuusen_flow {
+  width: 156.136px;
+  position: absolute;
+  /*   bottom: 394.563px; */
+  top: 2494.563px;
+  left: 689.779px;
+  /*
+    img {
+      width: 100px;
+    }
+  */
+}
+
+/* line 193, ../sass/index.scss */
+#fuusen_contact {
+  width: 147.409px;
+  position: absolute;
+  /*   bottom: 407px; */
+  top: 2507px;
+  left: 451.883px;
+  /*
+    img {
+      width: 50px;
+    }
+  */
+}
+
+/* line 206, ../sass/index.scss */
+#fuusen_sitemap {
+  width: 135.409px;
+  position: absolute;
+  /*   bottom: 236.556px; */
+  top: 2716.556px;
+  left: 343.229px;
+  /*
+    img {
+      width: 50px;
+    }
+  */
+}
+
+/* line 219, ../sass/index.scss */
+#fuusen_star {
+  width: 91px;
+  position: absolute;
+  /*   bottom: 236.556px; */
+  top: 2866.556px;
+  left: 363.229px;
+  /*
+    img {
+      width: 50px;
+    }
+  */
+}

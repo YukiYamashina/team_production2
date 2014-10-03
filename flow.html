@@ -1,0 +1,304 @@
+<!doctype html>
+<!--
+    Type         : HTML5 format
+    file name    : flow.html
+    Author       : Ryota Takao
+    Template     : Yuki Yamashina
+    Coding style : follows (partially) Google HTML/CSS Style Guide
+                   https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+-->
+<html lang="ja">
+
+  <head>
+
+    <!-- meta info and title part -->
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="UTF-8" />
+    <title>映像制作会社M＆F | 映像制作の流れ</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="F&M" />
+    <meta name="keywords" content="movie,corporate site" />
+    <meta name="description" content="This is a corporate site of F&M" />
+
+    <!-- load style files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/flow.css" />
+
+    <!-- load JavaScript files -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+      <script type="text/javascript">var console = { log: function() {} };</script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <!--<script src="js/slide_list.js"></script>-->   
+     <script src="js/modernizr.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#fullpage').fullpage({
+              sectionsBgImage: ['images/cb_background.jpg'],
+              anchors: ['for-client'],
+              css3: true,
+              scrollOverflow: true
+          });
+      });
+    </script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery.bubble.js"></script>
+
+    <script src="js/jquery.elliptic_text.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.elliptic-text').ellipticText({
+              // You have to adjust the following parameters
+              ellipse     : true,  // elliptic function if true, hyperbolic function if false
+              trsvDiameter: 60,    // transverse diameter a
+              cnjgDiameter: 10,    // conjugate  diameter b
+              proportion  : 1,   //
+              units       : '%'    // units for margin-left
+          });
+      });
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <h1 id="logo">
+      <a href="index.html" title="M&F">
+        <img src="images/logo/logo.png" alt="M&F" />
+      </a>
+    </h1>
+
+    <nav id="gnav">
+      <div class="gnav-item about_us">
+        <img src="images/icon/icon_aboutus_bg.png" alt="bg icon for about us" class="gnav-icon-bg">
+        <a href="aboutus.html" class="gnav-icon"></a>
+        <ul>
+          <li>About Us</li>
+          <li><a href="aboutus.html#concept">コンセプト</a></li>
+          <li><a href="aboutus.html#corporate-information">会社概要</a></li>
+          <li><a href="aboutus.html#recruit">求人</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item our_works">
+        <img src="images/icon/icon_our_works_bg.png" alt="bg icon for our works" class="gnav-icon-bg">
+        <a href="our_works.html" class="gnav-icon"></a>
+        <ul>
+          <li>Our Works</li>
+          <li><a href="our_works.html#our_works">事業実績</a></li>
+          <li><a href="our_works.html#gallery">ギャラリー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item price">
+        <img src="images/icon/icon_price_bg.png" alt="bg icon for price" class="gnav-icon-bg">
+        <a href="price.html" class="gnav-icon"></a>
+        <ul>
+          <li>Price</li>
+          <li><a href="price.html#estimate">お見積もり</a></li>
+          <li><a href="price.html#event">イベント</a></li>
+          <li><a href="price.html#pv">PV作成</a></li>
+          <li><a href="price.html#edit-only">編集のみの場合</a></li>
+          <li><a href="price.html#payment">お支払い</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item flow">
+        <img src="images/icon/icon_flow_bg.png" alt="bg icon for flow" class="gnav-icon-bg">
+        <a href="flow.html" class="gnav-icon"></a>
+        <ul>
+          <li>Flow</li>
+          <li><a href="flow.html#for-client">映像制作</a></li>
+          <li><a href="flow.html#flow">制作の流れ</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item contact">
+        <img src="images/icon/icon_contact_bg.png" alt="bg icon for contact" class="gnav-icon-bg">
+        <a href="contact.html" class="gnav-icon"></a>
+        <ul>
+          <li>Contact</li>
+          <li><a href="contact.html#contact">問い合わせ</a></li>
+          <li><a href="contact.html#privacy-policy">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item sitemap">
+        <img src="images/icon/icon_sitemap_bg.png" alt="bg icon for sitemap" class="gnav-icon-bg">
+        <a href="sitemap.html" class="gnav-icon"></a>
+        <ul>
+          <li>Sitemap</li>
+          <li><a href="sitemap.html#sitemap">サイトマップ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="fullpage">
+
+<!--
+      <ul id="menu">
+        <li data-menuanchor="for-client" class="active"><a href="#for-client">映像制作について</a></li>
+        <li data-menuanchor="flow"><a href="#flow">制作の流れ</a></li>
+      </ul>
+-->
+
+      <div class="section" id="for-client" data-menuanchor="for-client">
+        <div class="section-container">
+
+          <div class="top_contents">
+
+            <div class="left_contents">
+              <h1>
+                  FOR<br>
+                  CLIENT
+              </h1>
+              <h2>映像制作について</h2>
+              <p>
+                  1本の映像作品が仕上がるまでには非常に多くの工程を必要とします。<br>
+                  M&Fは、スタートから納品まで全ての工程に携わり、<br>
+                  クライアントの要望に応えるためフットワークよく臨機応変に<br>
+                  プロジェクトを進め、オンリーワンの映像作品を提供します。
+              </p>
+            </div>
+           
+            <div class="right_contents">
+              <ul class="elliptic-text">
+                <li><h3>STEP1</h3></li>
+                <li><h4><a href="flow.html#step1">お問い合わせ</a></h4></li>
+                <li>　</li>
+                <li><h3>STEP2</h3></li>
+                <li><h4><a href="flow.html#step2">打合せ</a></h4></li>
+                <li>　</li>
+                <li><h3>STEP3</h3></li>
+                <li><h4><a href="flow.html#step3">プランや構成の提案</a></h4></li>
+                <li>　</li>
+                <li><h3>STEP4</h3></li>
+                <li><h4><a href="flow.html#step4">お見積もりとご契約</a></h4></li>
+                <li>　</li>
+                <li><h3>STEP5</h3></li>
+                <li><h4><a href="flow.html#step5">撮影の準備</a></h4></li>
+                <li>　</li>
+                <li><h3>STEP6</h3></li>
+                <li><h4><a href="flow.html#step6">撮影</a></h4></li>
+                <li>　</li>
+                <li><h3>STEP7</h3></li>
+                <li><h4><a href="flow.html#step7">編集</a></h4></li>
+                <li>　</li>
+                <li><h3>STEP8</h3></li>
+                <li><h4><a href="flow.html#step8">MA(ナレーション収録)</a></h4></li>
+                <li>　</li>
+                <li><h3>STEP9</h3></li>
+                <li><h4><a href="flow.html#step9">各種メディアへ変換〜納品</a></h4></li>
+                <li>　</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bottom_contents" id="flow">
+          
+            <div id="step1" class="step_list">
+              <img src="images/flow/flowcnt11img.jpg" class="img_service step_image" alt="Ripre">
+              <div class="step_text">
+                <h3>STEP1.問い合わせ </h3>
+                <p class="txt">
+                  当サイトのお問合せフォームページからご依頼内容を送信いただくか、電話にてお問合せください。制作の目的やご予算、描いているイメージなどを具体的にお伝えいただくほど、スムーズに次のステップへと進めます。
+                <a href="contact.html#contact" class="modal btn_detail" style="margin-top: 56px;">
+                詳しくはこちら</a>
+                </p>
+              </div>
+            </div>
+            
+            <div id="step2" class="step_list">
+              <img src="images/flow/flowcnt12img.jpg" class="img_service step_image" alt="Ripre">
+              <div class="step_text">
+                <h3>STEP2.打合せ</h3>
+                <p class="txt">
+                  日時を合意の上、対面にてお打ち合わせをいたします。クライアントが何を求めているのか、本当に伝えたいことは何かを吸い上げます。ロケかスタジオか、タレントやモデルを入れるのか、様々な可能性をご提案しながら、クライアントの要望とすすり合わせていきます。丁寧な打ち合わせが企画の成功への鍵となります。
+                </p>
+              </div>
+            </div>
+            
+
+            <div id="step3" class="step_list">
+              <img src="images/flow/flowcnt13img.jpg" class="img_service step_image" alt="Ripre">  
+              <div class="step_text">
+                <h3>STEP3.プランや構成案、企画書の提案</h3>
+                <p class="txt">
+                    映像作品の善し悪しはコンセプトと切り口で決まります。ムービーファクトリーでは実績のあるディレクターや作家がブレストを繰り返しながらアイディアのカケラを形にしていきます。ここで練られたプランを企画書に落とし込みご提案いたします。
+                </p>
+              </div>
+            </div>
+
+            <div id="step4" class="step_list">
+              <img src="images/flow/flowcnt14img.jpg" class="img_service step_image" alt="Ripre">
+              <div class="step_text">
+                <h3>STEP4.お見積もりとご契約</h3>
+                <p class="txt">
+                    ご提案した企画を実現するためのお見積もりを提出します。工程、項目ごとに分かりやすく表記しておりますので、ご予算の調整が必要な際にも、何を足すのか削るのか、代替手段の有無など、明快なご提案が可能です。ご提案した企画を実現するためのお見積もりを提出します。
+                <a href="price.html#estimate" class="modal btn_detail" style="margin-top: 56px;">詳しくはこちら</a>
+                </p>
+              </div>
+            </div>
+    
+            <div id="step5" class="step_list">
+              <img src="images/flow/flowcnt15img.jpg" class="img_service step_image" alt="Ripre">
+              <div class="step_text">
+                <h3>STEP5.撮影の準備</h3>
+                  <p class="txt">
+                    スムーズな撮影を行うためには万全の準備が必要です。ロケハンをおこない撮影現場の状況を把握します。カメラマンや照明スタッフ、出演者やメイク、スタイリストの手配や打ち合わせをおこないます。お弁当の手配も重要なお仕事です。撮影は通常撮りなおしがきかないので、あらゆるトラブルの可能性を考えながら準備します。撮影準備の段取りがプロダクションの腕の見せ所でもあります。
+                 </p>
+              </div>
+            </div>
+
+            <div id="step6" class="step_list">
+              <img src="images/flow/flowcnt16img.jpg" class="img_service step_image" alt="Ripre">
+              <div class="step_text">
+                <h3>STEP6.撮影</h3>
+                <p class="txt">
+                  万全な準備を整えると撮影はちょっとしたお祭りとなります。ディレクター、カメラマン、タレント、現場にいる全てのスタッフが一丸となって撮影に臨みます。活発な現場の一体感は気持ちのいいものです。
+                </p>
+              </div>
+            </div>
+
+            <div id="step7" class="step_list">
+              <img src="images/flow/flowcnt17img.jpg" class="img_service step_image" alt="Ripre">
+              <div class="step_text">
+                <h3>STEP7.編集</h3>
+                <p class="txt">
+                  撮影した素材を編集室に持ち込んで、編集作業を行います。バラバラの素材が1本につなげられ、CGやテロップが加えられるといよいよ作品のカタチが見えてきます。編集は最も時間のかかる工程です。仮編集、本編集などとわけることも多く、途中で試写を行い、クライアントに確認をとりながら慎重に進めます。
+                </p>
+              </div>
+            </div>
+    
+            <div id="step8" class="step_list">
+              <img src="images/flow/flowcnt18img.jpg" class="img_service step_image" alt="Ripre">
+              <div class="step_text">
+                <h3>STEP8.MA(ナレーション収録)</h3>
+                <p class="txt">
+                    映像が完成すると最後に、ナレーションの収録を行い、BGMや効果音を加えて完成となります。クライアントにはスタジオに立ち会っていただき、ナレーターのイントネーションや細かい読み方、ニュアンスのチェックを行います。音楽やナレーションが作品の雰囲気を決定づけるため、非常に繊細で重要な作業です。ＭＡが終了すると完パケとよばれるマスターが完成します。
+                </p>
+              </div>
+           </div>
+    
+          <div id="step9" class="step_list">
+            <img src="images/flow/flowcnt19img.jpg" class="img_service step_image" alt="Ripre">
+            <div class="step_text">
+              <h3>STEP9.各種メディアへ変換〜納品</h3>
+              <p class="txt">
+                完成した映像は、納品形態にあわせて変換作業をおこないます。テレビ番組やCMは放送局のフォーマットにあわせて業務用のテープで納品。web用ならwmvやmp4、flvなど掲載サイトの仕様にあわせて変換。DVDの場合はメニューやチャプターをつけるオーサリングを行います。ジャケットやレーベルのデザインも決まったところで、プレスをおこない納品します。
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

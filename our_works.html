@@ -1,0 +1,262 @@
+<!doctype html>
+<!--
+    Type         : HTML5 format
+    file name    : our_works.html
+    Author       : Minori Hyodo
+    Template     : Yuki Yamashina
+    Coding style : follows (partially) Google HTML/CSS Style Guide
+                   https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+-->
+<html lang="ja">
+
+  <head>
+
+    <!-- meta info and title part -->
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="UTF-8" /><!--文字コード-->
+    <title>映像制作会社M&F｜事業実績</title>
+    <style type="text/css">
+    </style>
+    <!--seoのためのmetaタグ-->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="M&F" />
+    <meta name="keywords" content="movie,corporate site" />
+    <meta name="description" content="This is a corporate site of M&F" />
+
+    <!-- load style files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/our_works.css" />
+
+    <!-- load JavaScript files -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+      <script type="text/javascript">var console = { log: function() {} };</script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#fullpage').fullpage({
+              sectionsBgImage: ['images/cb_background.jpg','images/cb_background.jpg'],
+              anchors: ['our_works','gallery'],
+              menu: '#menu',
+              css3: true,
+              loopTop: true,
+              loopBottom: true,
+              scrollingSpeed: 500
+          });
+      });
+    </script>
+    <script src="js/jquery.bubble.js"></script>
+    <script src="js/jquery.elliptic_text.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.elliptic-text').ellipticText({
+              // You have to adjust the following parameters
+              ellipse     : true,  // elliptic function if true, hyperbolic function if false
+              trsvDiameter: 80,    // transverse diameter a
+              cnjgDiameter: 10,    // conjugate  diameter b
+              proportion  : 0.60,   // 
+              units       : '%'    // units for margin-left
+          });
+      });
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+      //  JS to magnify the images
+      $(function() {
+          $('#carousel figure').hover(
+          function () {
+              $(this).css('z-index','1000');
+              $(this).stop().animate({
+                  'width'     :'360px',
+                  'height'    :'240px',
+                  'top'       :'-50px',
+                  'left'      :'-50px',
+              },{duration:500,queue:false});
+          },
+          function () {
+              $(this).css('z-index','0');
+              $(this).stop().animate({
+                  'width'     :'180px',
+                  'height'    :'120px',
+                  'top'       :'10px',
+                  'left'       :'10px',
+                  'z-index'   :'0'
+              },{duration:500,queue:false});
+          });
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <h1 id="logo">
+      <a href="index.html" title="M&F">
+        <img src="images/logo/logo.png" alt="M&F" />
+      </a>
+    </h1>
+
+    <nav id="gnav">
+      <div class="gnav-item about_us">
+        <img src="images/icon/icon_aboutus_bg.png" alt="bg icon for about us" class="gnav-icon-bg">
+        <a href="aboutus.html" class="gnav-icon"></a>
+        <ul>
+          <li>About Us</li>
+          <li><a href="aboutus.html#concept">コンセプト</a></li>
+          <li><a href="aboutus.html#corporate-information">会社概要</a></li>
+          <li><a href="aboutus.html#recruit">求人</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item our_works">
+        <img src="images/icon/icon_our_works_bg.png" alt="bg icon for our works" class="gnav-icon-bg">
+        <a href="our_works.html" class="gnav-icon"></a>
+        <ul>
+          <li>Our Works</li>
+          <li><a href="our_works.html#our_works">事業実績</a></li>
+          <li><a href="our_works.html#gallery">ギャラリー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item price">
+        <img src="images/icon/icon_price_bg.png" alt="bg icon for price" class="gnav-icon-bg">
+        <a href="price.html" class="gnav-icon"></a>
+        <ul>
+          <li>Price</li>
+          <li><a href="price.html#estimate">お見積もり</a></li>
+          <li><a href="price.html#event">イベント</a></li>
+          <li><a href="price.html#pv">PV作成</a></li>
+          <li><a href="price.html#edit-only">編集のみの場合</a></li>
+          <li><a href="price.html#payment">お支払い</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item flow">
+        <img src="images/icon/icon_flow_bg.png" alt="bg icon for flow" class="gnav-icon-bg">
+        <a href="flow.html" class="gnav-icon"></a>
+        <ul>
+          <li>Flow</li>
+          <li><a href="flow.html#for-client">映像制作</a></li>
+          <li><a href="flow.html#flow">制作の流れ</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item contact">
+        <img src="images/icon/icon_contact_bg.png" alt="bg icon for contact" class="gnav-icon-bg">
+        <a href="contact.html" class="gnav-icon"></a>
+        <ul>
+          <li>Contact</li>
+          <li><a href="contact.html#contact">問い合わせ</a></li>
+          <li><a href="contact.html#privacy-policy">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item sitemap">
+        <img src="images/icon/icon_sitemap_bg.png" alt="bg icon for sitemap" class="gnav-icon-bg">
+        <a href="sitemap.html" class="gnav-icon"></a>
+        <ul>
+          <li>Sitemap</li>
+          <li><a href="sitemap.html#sitemap">サイトマップ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="fullpage">
+
+      <ul id="menu">
+        <li data-menuanchor="our_works" class="active"><a href="#our_works">Our Works</a></li>
+        <li data-menuanchor="gallery" class="active"><a href="#gallery">Gallery</a></li>
+      </ul>
+
+      <div class="section">
+
+        <div class="slide" id="our_works" data-menuanchor="our_works">
+          <div class="slide-container">
+
+            <div class="left_contents">
+              <h1>
+                ARCHIVE OF<br>
+                MOVIE<br>
+                FACTORY's<br>
+                WORK
+              </h1>
+              <h2>MOVIE FACTORYの実績紹介</h2>
+              <p>
+                映像の発信力を用いて、お客様の未来を変えてゆく。<br>
+                そのお手伝いをいたします。
+              </p>
+            </div>
+            
+            <div class="right_contents">
+              <ul class="elliptic-text">
+                <li><h3>実施実績</h3></li>
+                <li><h4>常盤製品</h4></li>
+                <li><h4>リクルート</h4></li>
+                <li><h4>ハーゲンダッツ</h4></li>
+                <li><h4>第一三共ヘルスケア</h4></li>
+                <li><h4>コーセー</h4></li>
+                <li><h4>エプソン販売</h4></li>
+                <li><h4>ゼスプリインターナショナル</h4></li>
+                <li>　</li>
+                <li><h3>主要取引先</h3></li>
+                <li><h4>電通</h4></li>
+                <li><h4>博報堂</h4></li>
+                <li><h4>ＡＤＫ</h4></li>
+                <li><h4>読売広告社</h4></li>
+                <li><h4>サイバーエージェント</h4></li>
+                <li><h4>セプテーニ</h4></li>
+                <li><h4>オプト</h4></li>
+                <li>　</li>
+                <li><h3>主要取引先媒体</h3></li>
+                <li><h4>集英社</h4></li>
+                <li><h4>講談社</h4></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="slide" id="gallery" data-menuanchor="gallery">
+          <div class="slide-container">
+
+            <div class="gallery_top">
+              <h1>
+                MOVIE<br>
+                PAST PROJECT<br>
+              </h1>
+              <h2>映像制作実績紹介</h2>
+              <p>
+                MOVIE FACTORYのこれまでの
+                制作実績をご紹介いたします。
+              </p>
+            </div>
+            <div class="gallery_container">
+          	  <div id="carousel">
+                <figure><a href="http://www.youtube.com/watch?v=tZbXHt3xPr8&feature=player_embedded"><img src="http://img.youtube.com/vi/player_embedded/0.jpg" alt="alt here..." /></a></figure>
+                <figure><a href="http://www.youtube.com/watch?feature=player_embedded&v=GivkxpAVVC4"><img src="http://img.youtube.com/vi/GivkxpAVVC4/0.jpg" alt="alt here..." /></a></figure>
+                <figure><a href="http://www.youtube.com/watch?feature=player_embedded&v=9bZkp7q19f0"><img src="http://img.youtube.com/vi/9bZkp7q19f0/0.jpg" alt="alt here..." /></a></figure>
+                <figure><a href="http://www.youtube.com/watch?v=J59n8FsoRLE"><img src="http://img.youtube.com/vi/J59n8FsoRLE/0.jpg" alt="alt here..." /></a></figure>
+                <figure><a href="http://www.youtube.com/watch?v=jmR0V6s3NKk"><img src="http://img.youtube.com/vi/jmR0V6s3NKk/0.jpg" alt="alt here..." /></a></figure>
+                <figure><a href="http://www.youtube.com/watch?v=FEpFlymH6RQ"><img src="http://img.youtube.com/vi/FEpFlymH6RQ/0.jpg" alt="alt here..." /></a></figure>
+                <figure><a href="http://www.youtube.com/watch?v=rIhnnQH_GdQ"><img src="http://img.youtube.com/vi/rIhnnQH_GdQ/0.jpg" alt="alt here..." /></a></figure>
+                <figure><a href="http://www.youtube.com/watch?v=u3S3BhmYPzg"><img src="http://img.youtube.com/vi/u3S3BhmYPzg/0.jpg" alt="alt here..." /></a></figure>
+                <figure><a href="http://www.youtube.com/watch?v=qiOGy3e1Z0I"><img src="http://img.youtube.com/vi/qiOGy3e1Z0I/0.jpg" alt="alt here..." /></a></figure>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  <script src="js/our_works.js"></script>
+
+  </body>
+
+</html>

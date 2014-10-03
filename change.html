@@ -1,0 +1,223 @@
+<!doctype html>
+<!--
+    Type         : HTML5 format
+    Author       : hogehoge
+    Template     : Yuki Yamashina
+    Coding style : follows (partially) Google HTML/CSS Style Guide
+                   https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+-->
+<html lang="ja">
+
+  <head>
+
+    <!-- meta info and title part -->
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="UTF-8" />
+    <title>NANTOKA FACTORY</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="NANTOKA Factory" />
+    <meta name="copyright" content="© NANTOKA Factory" />
+    <meta name="keywords" content="movie,corporate site" />
+    <meta name="description" content="This is a corporate site of NANTOKA Factory" />
+
+    <!-- load style files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/change.css" />
+
+    <!-- load JavaScript files -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+ 
+  </head>
+
+  <body>
+
+    <h1>作業履歴（変更箇所とか）</h1>
+
+    <section id="change-history">
+
+      <h3>07/26/2014</h3>
+
+      <dl>
+        <dt class="yuki">17:00-19:00</dt>
+        <dd>
+          <p>
+            jQuery探してきてとりあえずindex.htmlのテストページつくってみた。<br>
+            template.htmlとcommon.cssを準備。<br>
+            Google Drive上にnantoka_factoryていうフォルダをつくってそこに全部入れといた。<br>
+            cssフォルダはcssファイル置き場、jsフォルダはJavaScriptファイル置き場、imagesは画像ファイル置き場、<br>
+            site_designフォルダは金曜日につくってた諸々のファイル置き場、になってます。<br>
+            下の更新履歴見てね。
+          </p>
+        </dd>
+        <dt class="yuki">24:00-31:20</dt>
+        <dd>
+          <p>
+            やりたいのはカートと黄色い風船が右に進んで行って、画面端でぶつかって風船が飛び出る、みたいなの。<br>
+            いまのところはカートと黄色い風船が同じスピードになるように調整中。<br>
+            <br>
+            それができなかったとしても、はじめからカートを真ん中に表示させておいて、<br>
+            そっから赤とか紫の風船を飛ばすだけっていうやつは簡単に出来た。<br>
+            なので最悪『風船が動いてクリックすればページに飛ぶ』、ってのはできる感じ。<br>
+            <br>
+            風船があるところまで飛んで行ったらそこで上下に小さくバウンドする、っていうのはできそう。<br>
+            アニメーションスピードはいつでも調整できるから安心して。<br>
+            風船クリックすると適当に作ったページに飛ぶよ<br>
+          </p>
+        </dd>
+      </dl>
+
+      <h3>07/27/2014</h3>
+
+      <dl>
+        <dt class="yuki">07:20-09:40</dt>
+        <dd>
+          <p>
+            せっかくやからいつものXHTMLじゃなくてHTML5で書いてみる？授業で習ってないけど...<br>
+            change.htmlファイルに色々書いた。
+          </p>
+        </dd>
+        <dt class="yuki">14:30-17:00</dt>
+        <dd>
+          <p>
+            Google DriveとDropboxの設定完了。change.htmlに色々追記。<br>
+            詳しくは下の<a href="#file_manage">ファイルを管理する手順</a>を読んでね。
+          </p>
+        </dd>
+        <dt class="yuki">17:30-18:00</dt>
+        <dd>
+          <p>
+            とりあえずカートを固定したまま、風船がブワって広がるやつはできたけど。<br>
+            ブラウザの高さと幅に合わせてアニメーションできるようにしないと。<br>
+            てか風船が所定の位置についた後、ふわふわバウンドするように頑張ってみる。
+          </p>
+        </dd>
+        <dt class="yuki">18:20-19:00</dt>
+        <dd>
+          <p>
+            風船が飛び上がったら画面が全体的に上にスクロールして<br>
+            カートを画面外に追いやりたい。でもって上に行った先にキャッチコピー的なのが待ってて<br>
+            そこまで風船がいったらふわふわバウンドするようになる、みたいなのやってみたい、なぁ...
+          </p>
+        </dd>
+        <dt class="yuki">21:00-23:30</dt>
+        <dd>
+          <p>
+            風船がふわふわバウンドするところまでいった。<br>
+            今回はhtmlの構造化ちゃんと意識したいな。
+          </p>
+        </dd>
+      </dl>
+
+      <h3>07/28/2014</h3>
+
+      <dl>
+        <dt class="yuki">25:30-29:00</dt>
+        <dd>
+          <p>
+            template.html書いたyo。とりあえずロゴつけてアイコンつけてテキストエリアの幅変えて左揃えにして上のメニューの位置変えて、って感じで。<br>
+            基本的にはtemplate.htmlにh1要素でロゴ作ってnavタブでgnav作ってあとはcommon.cssを編集しただけ。<br>
+            残りの微調整は誰かにやってもらおうかな。<br>
+            あとアイコンにマウスが乗っかったらサブメニューがでるやつ、コピペして貼付けたらできたよ。<br>
+            見た目をどんな感じにするのかを決めたらまた手つけます。ちなみにcssだけでやってます。<br>
+            そういえばあの星形のアイコンって何用やったっけ？
+          </p>
+        </dd>
+      </dl>
+
+    </section>
+
+    <section class="usage">
+
+      <h2>このページの使い方</h2>
+      <h3>
+        色分け：
+        <span class="naochan">naochan</span>
+        <span class="minorin">minorin</span>
+        <span class="yuki">yuki</span>
+        <span class="takky">takky</span>
+        <span class="ryo-chin">ryo-chin</span>
+      </h3>
+      <p>
+        日付の入ったh3要素と変更内容を書くdl要素をまとめてコピーして内容を書き換えて使ってね。<br>
+        dt要素のクラス名を上の色分けのそれぞれの名前にしてやると、変更時間の色が対応する色になってくれるよ。<br>
+        changeファイルを書き換えるときはみんなに確認取った方が良いよね、多分。<br>
+        じゃないと二人同時にファイル書き換えてアップロードしたら片方しか反映されなかったりするし。<br>
+      </p>
+
+    </section>
+
+    <section class="file-upload" id="file_manage">
+
+      <h3>ファイルを管理する手順</h3>
+      <h4>やりたいこと</h4>
+        <ol>
+          <li>金曜日にやってたみたいに、参考サイトとかのまとめをブラウザから直接編集できる</li>
+          <li>メンバーがpsdファイルやらhtmlファイルやらcssファイルをダウンロード／アップロードできる</li>
+          <li>つくったWebサイトをブラウザで表示できてちゃんとコーディングできてるか確認ができる</li>
+        </ol>
+      <h4>どうやったらできる？</h4>
+      <ul>
+        <li>1ができるのはGoogle Drive。Dropboxでもできなくもないけど面倒い。</li>
+        <li>2が出来るのはDropboxとか授業で使ったサーバとか。Google Driveだとフォルダの所有者しかアップロードできない。</li>
+        <li>3が出来るのはGoogle Driveとか授業で使ったサーバとか。DropboxはMy.DropPagesとか使うとできた。</li>
+      </ul>
+      <h4>で、どうすんの？</h4>
+      <ul>
+        <li>Google DriveとDropboxの併用</li>
+        <p>
+          <ul>
+            <li class="white-space">　</li>
+            <li>中川さんのパソコンにGoogle Driveっていうフォルダがあります。</li>
+            <li>中川さんのパソコンにはGoogle Driveっていうアプリが入ってます。</li>
+            <li>そのアプリを起動してると、Google Driveっていうフォルダは常にGoogleのサーバ上にバックアップが保存されるようになります。</li>
+            <li>Google Driveフォルダに入ってるファイルを変更すると、すぐにGoogleサーバ上のファイルにもその変更が伝わります。</li>
+            <li class="white-space">　</li>
+            <li>さらにGoogle Driveフォルダの中にDropboxっていうフォルダがあります。</li>
+            <li>中川さんのパソコンにはDropboxっていうアプリも入ってます。</li>
+            <li>そのアプリを起動してると、Dropboxっていうフォルダは常にDropboxのサーバ上にバックアップが保存されるようになります。</li>
+            <li>Dropboxフォルダに入ってるファイルを変更すると、すぐにDropboxサーバ上のファイルにもその変更が伝わります。</li>
+            <li class="white-space">　</li>
+            <li>中川さんのパソコンの中のGoogle Driveフォルダの中のDropboxフォルダの中にnantoka_factoryっていうフォルダが入っています。</li>
+            <li>nantoka_factoryフォルダには金曜日に作ってもらったsite_mapやらindex.htmlやら画像ファイルやら全部入ってます。</li>
+            <li>nantoka_factoryの中のindex.htmlとかはGoogle Driveの共有設定で『一般公開』されているので、誰でも閲覧できます。</li>
+            <li>試しに<a href="https://8a3ebcb0b53dffbb8cb399e1c9aeff98f32d85eb.googledrive.com/host/0B1Rlk1xTh_vvb3dselJXZTJtOUE/">ここ</a>にアクセスしてみてください。トップページらしきものが表示されるはずです。</li>
+            <li>これで『やりたいこと』の3はできた。
+            <li class="white-space">　</li>
+            <li>ただし、普通の人は『閲覧』できるだけで『編集』はできません。</li>
+            <li>でも6班のメンバーだけはnantoka_factoryフォルダの中のファイルを編集できる設定にしてあります。</li>
+            <li><a href="https://drive.google.com/folderview?id=0B1Rlk1xTh_vvb3dselJXZTJtOUE&usp=sharing_eil">ここ</a>に飛ぶとnantoka_factoryの中が見れて、ファイルを選ぶと編集できる...はず。</li>
+            <li>例えばすぐ上のリンクからsite_designを選んで、その中のreference_siteを選んで上の『開く』をクリックすると編集できますよ。</li>
+            <li>これで『やりたいこと』の1もできた。後は2だけ。ここでDropboxの出番。</li>
+            <li class="white-space">　</li>
+            <li>さっき言ったように、Dropboxフォルダの中にnantoka_factoryっていうフォルダが入ってます。</li>
+            <li>で、nantoka_factoryフォルダは、Dropbox上でも共有設定がオンになってます。</li>
+            <li>こうすれば、あとは中川さんが『フォルダに招待』っていうのをすれば、招待された人のDropboxの中の『共有』ってところにnantoka_factoryフォルダが表示されて、好きなだけファイルのアップロード／ダウンロードができるようになる...はず。</li>
+            <li>Dropboxにアカウントをもってない人はgmailにメール送ったのでアカウント作って、フォルダ共有の招待メールでなんか適当にクリックしておいてね(○ゝω･)b⌒☆NE!</li>
+            <li>Dropboxにアカウントつくってフォルダ共有できた人は自分の名前.txtみたいなファイルに自分の名前を書いて、nantoka_factoryにちゃんとアップロードできるか確認してね。
+          </ul>
+        </p>
+      </ul>
+
+    </section>
+
+    <section class="coding-rule">
+
+      <h3>コーディングのお約束</h3>
+      <p>
+        <a href="https://b7ecb57b2478167a9d1420bdc32e98da484692d9.googledrive.com/host/0B1Rlk1xTh_vveU81UVA1MDZqUXM/#/12">HTMLはここから先</a>
+        を呼んでね（リンク先では右押すとページが進むよ）<br>
+        <a href="https://b7ecb57b2478167a9d1420bdc32e98da484692d9.googledrive.com/host/0B1Rlk1xTh_vveU81UVA1MDZqUXM/#/27">CSSはここから先</a>
+        を呼んでね（リンク先では右押すとページが進むよ）<br>
+        勉強したい人は
+        <a href="http://detarame.moo.jp/2012/08/07/googleが推薦するhtmlとcssのコーディング方法/">こことか</a>
+      </p>
+
+    </section>
+
+  </body>
+
+</html>

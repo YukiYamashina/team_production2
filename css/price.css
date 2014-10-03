@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/********************
+ *  slide settings
+ *******************/
+
+.section-container {
+  overflow: hidden;
+}
+
+ul.elliptic-text {
+  list-style-type: none; 
+  line-height: 150%;
+}
+
+p {
+  font-size: 115%;
+  letter-spacing:0.1em;
+  line-height: 150%;
+}
+
+h2 {
+	font-size: 200%;
+	letter-spacing: 0.1em;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 115%;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	line-height: 150%;
+}
+
+h4 {
+	font-size: 85%;
+	letter-spacing: 0.1em;
+	font-weight: normal;
+	line-height: 150%;
+}
+
+
+#estimate .left_contents {
+	width: 40%;
+  position: absolute;
+  top: 26%;
+  left: 4%;
+}
+
+#estimate h1 {
+  margin-top: 0;
+}
+
+#estimate .right_contents {
+	width: 60%;
+	position: absolute;
+  top: 25%;
+  left: 0;
+	text-align: left;
+	line-height:10%;
+}
+
+#event .left_contents {
+	width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 24%;
+}
+
+#event h1 {
+  margin-top: 0;
+}
+
+#event .right_contents {
+	width: 60%;
+	position: absolute;
+  top: 9%;
+  left: 24%;
+	text-align: left;
+	line-height:10%;
+}
+
+#pv .left_contents {
+	width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 44%;
+}
+
+#pv h1 {
+  margin-top: 0;
+}
+
+#pv .right_contents {
+	width: 60%;
+	position: absolute;
+  top: 10%;
+  left: 44.5%;
+	text-align: left;
+	line-height:10%;
+}
+
+#edit-only .left_contents {
+	width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 64%;
+}
+
+#edit-only h1 {
+  margin-top: 0;
+}
+
+#edit-only .right_contents {
+	width: 60%;
+	position: absolute;
+  top: 17%;
+  left: 64%;
+	text-align: left;
+	line-height:10%;
+}
+
+
+#payment {
+	width: 60%;
+	position: absolute;
+  top: 7%;
+  left: 80%;
+	text-align: left;
+	line-height:10%;
+}
+
+#payment h1 {
+  padding-bottom: 2%;
+}
+
+#payment h2 {
+  padding-bottom: 4%;
+}
+
+
+#estimate a {
+	color: #333333;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#estimate a:hover {
+	color: #666666;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.prise {
+	margin-top: 160px;
+	margin-left: 550px;
+	width: 100%;
+}
+
+.tekiyou {
+	float: left;
+	clear: both;
+	width: 90px;
+	height: 19px;
+	border-bottom: 1px dotted #000000;
+}
+
+.tanka {
+	float:left;
+	width: 80px;
+	height: 19px;
+	border-bottom: 1px dotted #000000;
+}
+
+.bikou {
+	float: left;
+	width: 200px;
+	height: 19px;
+	border-bottom: 1px dotted #000000;
+}
+
+.item {
+	padding-top: 5px;
+	padding-left: 10px;
+	float: left;
+	clear: both;
+	width: 120px;
+	height: 20px;
+}
+
+.yen {
+	padding-top: 5px;
+	float:left;
+	width: 100px;
+	height: 20px;
+}
+
+.in {
+	padding-top: 5px;
+	float: left;
+	height: 20px;
+	width: 240px;
+}
+
+.total {
+	padding-top: 5px;
+	float: left;
+	clear: both;
+	width: 120px;
+	height: 19px;
+	border-top: 1px dotted #000000;
+}
+
+.total_yen {
+	padding-top: 5px;
+	float: left;
+	width:280px;
+	height: 19px;
+	border-top: 1px dotted #000000;
+}

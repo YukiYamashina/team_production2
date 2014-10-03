@@ -1,0 +1,388 @@
+<!doctype html>
+<!--
+    Type         : HTML5 format
+    file name    : price.html
+    Author       : Shiro Tanaka
+    Template     : Yuki Yamashina
+    Coding style : follows (partially) Google HTML/CSS Style Guide
+                   https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+-->
+<html lang="ja">
+
+  <head>
+
+    <!-- meta info and title part -->
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="UTF-8" />
+    <title>映像制作会社M＆F｜見積事例集</title>
+<!--    <style type="text/css">
+    </style>-->
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="M&F" />
+    <meta name="keywords" content="movie,corporate site" />
+    <meta name="description" content="This is a corporate site of M&F" />
+
+    <!-- load style files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link href="css/price.css" rel="stylesheet" type="text/css">
+    <!-- load JavaScript files -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+      <script type="text/javascript">var console = { log: function() {} };</script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#fullpage').fullpage({
+            sectionsBgImage: ['images/cb_background.jpg','images/cb_background.jpg','images/cb_background.jpg','images/cb_background.jpg','images/cb_background.jpg'],
+            anchors: ['estimate', 'event', 'pv', 'edit-only','payment'],
+            menu: '#menu',
+            css3: true,
+            loopTop: true,
+            loopBottom: true
+        });
+    });
+    </script>
+    <script src="js/jquery.bubble.js"></script>
+    <script src="js/jquery.elliptic_text.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.elliptic-text').ellipticText({
+              // You have to adjust the following parameters
+              ellipse     : true,  // elliptic function if true, hyperbolic function if false
+              trsvDiameter: 70,    // transverse diameter a
+              cnjgDiameter: 10,    // conjugate  diameter b
+              proportion  : 0.60,   // 
+              units       : '%'    // units for margin-left
+          });
+      });
+    </script>
+
+  </head>
+
+
+  <body>
+
+    <h1 id="logo">
+      <a href="index.html" title="M&F">
+        <img src="images/logo/logo.png" alt="M&F" />
+      </a>
+    </h1>
+
+    <nav id="gnav">
+      <div class="gnav-item about_us">
+        <img src="images/icon/icon_aboutus_bg.png" alt="bg icon for about us" class="gnav-icon-bg">
+        <a href="aboutus.html" class="gnav-icon"></a>
+        <ul>
+          <li>About Us</li>
+          <li><a href="aboutus.html#concept">コンセプト</a></li>
+          <li><a href="aboutus.html#corporate-information">会社概要</a></li>
+          <li><a href="aboutus.html#recruit">求人</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item our_works">
+        <img src="images/icon/icon_our_works_bg.png" alt="bg icon for our works" class="gnav-icon-bg">
+        <a href="our_works.html" class="gnav-icon"></a>
+        <ul>
+          <li>Our Works</li>
+          <li><a href="our_works.html#our_works">事業実績</a></li>
+          <li><a href="our_works.html#gallery">ギャラリー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item price">
+        <img src="images/icon/icon_price_bg.png" alt="bg icon for price" class="gnav-icon-bg">
+        <a href="price.html" class="gnav-icon"></a>
+        <ul>
+          <li>Price</li>
+          <li><a href="price.html#estimate">お見積もり</a></li>
+          <li><a href="price.html#event">イベント</a></li>
+          <li><a href="price.html#pv">PV作成</a></li>
+          <li><a href="price.html#edit-only">編集のみの場合</a></li>
+          <li><a href="price.html#payment">お支払い</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item flow">
+        <img src="images/icon/icon_flow_bg.png" alt="bg icon for flow" class="gnav-icon-bg">
+        <a href="flow.html" class="gnav-icon"></a>
+        <ul>
+          <li>Flow</li>
+          <li><a href="flow.html#for-client">映像制作</a></li>
+          <li><a href="flow.html#flow">制作の流れ</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item contact">
+        <img src="images/icon/icon_contact_bg.png" alt="bg icon for contact" class="gnav-icon-bg">
+        <a href="contact.html" class="gnav-icon"></a>
+        <ul>
+          <li>Contact</li>
+          <li><a href="contact.html#contact">問い合わせ</a></li>
+          <li><a href="contact.html#privacy-policy">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item sitemap">
+        <img src="images/icon/icon_sitemap_bg.png" alt="bg icon for sitemap" class="gnav-icon-bg">
+        <a href="sitemap.html" class="gnav-icon"></a>
+        <ul>
+          <li>Sitemap</li>
+          <li><a href="sitemap.html#sitemap">サイトマップ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="fullpage">
+
+      <ul id="menu">
+        <li data-menuanchor="estimate" class="active"><a href="#estimate">Estimate</a></li>
+        <li data-menuanchor="event"><a href="#event">Event</a></li>
+        <li data-menuanchor="pv"><a href="#pv">PV</a></li>
+        <li data-menuanchor="edit-only"><a href="#edit-only">Only Editing</a></li>
+        <li data-menuanchor="payment"><a href="#payment">About Payment</a></li>
+      </ul>
+      
+
+      <div class="section">
+
+        <div class="slide" id="estimate" data-menuanchor="estimate">
+          <div class="slide-container">
+
+            <div class="left_contents">
+              <h1>
+                ESTIMATE OF<br>
+                CASE<br>EXAMPLES
+              </h1>
+          
+              <h2>お見積事例集</h2>
+              <p>
+                お客様のご予算に合わせて、<br>
+                最も効果的なシナリオ・演出をご提案いたします
+              </p>
+            </div>
+            
+            <div id="right_contents">
+              <ul class="elliptic-text">
+                <li><a href="#event">EVENT/イベント</a></li>
+                <li><h4>イベントムービー制作/</h4></li>
+                <li><h4>撮影ありの1分～3分のイベントムービー</h4></li>
+                <li>　</li>
+                <li><a href="#pv">PV/プロモーションビデオ</a></li>
+                <li><h4>PV制作/</h4></li>
+                <li><h4>グラフィックアニメーション、撮影有の2分の店頭販促ムービー</h4></li>
+                <li>　</li>
+                <li><h3><a href="#edit-only">ONLY EDITING/編集のみ</a></h3></li>
+                <li><h4>動画・画像の編集/</h4></li>
+                <li><h4>映像を素材として5分程度の映像編集</h4></li>
+                <li>　</li>
+                <li><h3><a href="#payment">ABOUT PAYMEN/お支払いについて</a></h3></li>
+                <li><h4>お支払いについて</h4></li>
+                <li><h4>キャンセルについて</h4></li>
+              </ul>
+            </div> 
+
+          </div>
+        </div>
+
+        <div class="slide" id="event" data-menuanchor="event">
+          <div class="slide-container">
+        
+            <div class="left_contents">
+              <h1>EVENT</h1>
+              <h2>イベントムービー制作</h2>
+              <p>
+                グラフィックアニメーション、<br>
+                撮影有りの1分から3分のイベントムービー<br>
+                半日程度の撮影と企画構成を含め、<br>
+                3分間に仕上げた場合のお見積り事例です。<br>
+                出演タレントが必要な場合、<br>
+                当社契約のタレント事務所より<br>
+                1名3万円～でご用意いたします。
+              </p>
+            </div>
+
+            <div class="right_contents">
+              <dl class="prise">
+          
+                <dt class="tekiyou"><h4>摘要</h4></dt>
+                <dd class="tanka"><h4>単価</h4></dd>
+                <dd class="bikou"><h4>備考</h4></dd>
+          
+                <dt class="item"><h4>企画構成</h4></dt>
+                <dd class="yen"><h4>¥30,000~</h4></dd>
+                <dd class="in"><h4>（絵コンテ制作費用含む）</h4></dd>
+            
+                <dt class="item"><h4>ディレクション</h4></dt>
+                <dd class="yen"><h4>¥50,000~</h4></dd>
+                <dd class="in"><h4>（打ち合わせ費用含む）</h4></dd>
+            
+                <dt class="item"><h4>編集</h4></dt>
+                <dd class="yen"><h4>¥100,000~</h4></dd>
+                <dd class="in"><h4>（編集作業費）</h4></dd>
+             
+                <dt class="item"><h4>撮影</h4></dt>
+                <dd class="yen"><h4>¥80,000~</h4></dd>
+                <dd class="in"><h4>（1日6時間/スタッフ2名）</h4></dd>
+            
+                <dt class="item"><h4>撮影機材</h4></dt>
+                <dd class="yen"><h4>¥30,000~</h4></dd>
+                <dd class="in"><h4>（カメラ/音声/照明機材含む）</h4></dd>
+            
+                <dt class="item"><h4>音効</h4></dt>
+                <dd class="yen"><h4>¥20,000~</h4></dd>
+                <dd class="in"><h4>（BGM,SE使用料含む）</h4></dd>
+            
+                <dt class="item"><h4>グラフィック</h4></dt>
+                <dd class="yen"><h4>¥80,000~</h4></dd>
+                <dd class="in"><h4>（グラフィック制作費）</h4></dd>
+            
+                <dt class="total"><h4><strong>TOTAL</strong></h4></dt>
+                <dd class="total_yen"><h4><strong>¥390,000~</strong></h4></dd>
+
+              </dl>
+            </div> 
+
+          </div>
+        </div>
+
+        <div class="slide" id="pv" data-menuanchor="pv">
+          <div class="slide-container">
+        
+            <div class="left_contents">
+              <h1>
+                SHOP PV
+              </h1>
+          
+              <h2>PV制作</h2>
+          
+              <p>
+                グラフィックアニメーション、撮影有りの<br>
+                2分間の店頭販促ムービー<br>
+                企画案は当社より複数ご提案いたします。<br>
+                出演タレントが必要な場合、
+                当社契約のタレント事務所より<br>
+                1名3万円～でご用意いたします。
+              </p>
+            </div>
+
+            <div class="right_contents">
+              <dl class="prise">
+            
+                <dt class="tekiyou"><h4>摘要</h4></dt>
+                <dd class="tanka"><h4>単価</h4></dd>
+                <dd class="bikou"><h4>備考</h4></dd>
+          
+                <dt class="item"><h4>企画構成</h4></dt>
+                <dd class="yen"><h4>¥20,000~</h4></dd>
+                <dd class="in"><h4>（絵コンテ制作費用含む）</h4></dd>
+            
+                <dt class="item"><h4>ディレクション</h4></dt>
+                <dd class="yen"><h4>¥60,000~</h4></dd>
+                <dd class="in"><h4>（打ち合わせ費用含む）</h4></dd>
+            
+                <dt class="item"><h4>編集</h4></dt>
+                <dd class="yen"><h4>¥150,000~</h4></dd>
+                <dd class="in"><h4>（編集作業費）</h4></dd>
+            
+                <dt class="item"><h4>撮影</h4></dt>
+                <dd class="yen"><h4>¥100,000~</h4></dd>
+                <dd class="in"><h4>（1日8時間/スタッフ2名）</h4></dd>
+            
+                <dt class="item"><h4>撮影機材</h4></dt>
+                <dd class="yen"><h4>¥30,000~</h4></dd>
+                <dd class="in"><h4>（カメラ/音声/照明機材含む）</h4></dd>
+            
+                <dt class="item"><h4>撮影スタジオ</h4></dt>
+                <dd class="yen"><h4>¥60,000~</h4></dd>
+                <dd class="in"><h4>（撮影スタジオ6時間使用）</h4></dd>
+            
+                <dt class="item"><h4>音効</h4></dt>
+                <dd class="yen"><h4>¥20,000~</h4></dd>
+                <dd class="in"><h4>（BGM,SE使用料含む）</h4></dd>
+            
+                <dt class="total"><h4><strong>TOTAL</strong></h4></dt>
+                <dd class="total_yen"><h4><strong>¥440,000~</strong></h4></dd>
+              
+              </dl>
+            </div>  
+          
+          </div>
+        </div>
+
+        <div class="slide" id="edit-only" data-menuanchor="edit-only">
+          <div class="slide-container">
+        
+            <div class="left_contents">
+              <h1>
+                ONLY EDITING
+              </h1>
+          
+              <h2>動画・画像の編集のみ</h2>
+          
+              <p>
+                映像を素材として5分程度の映像編集を、<br>
+                タイトルやデザイン、音楽をつけた場合の料金です。<br>
+                DVDへのデータ保存を承ります。(別途料金)<br>
+                撮影したままになっている映像を効率良く編集致します。
+              </p>
+            </div>
+
+            <div class="right_contents">
+              <dl class="prise">
+           
+                <dt class="tekiyou"><h4>摘要</h4></dt>
+                <dd class="tanka"><h4>単価</h4></dd>
+                <dd class="bikou"><h4>備考</h4></dd>
+          
+                <dt class="item"><h4>映像編集</h4></dt>
+                <dd class="yen"><h4>¥40,000~</h4></dd>
+                <dd class="in"><h4>（映像編集料金）</h4></dd>
+            
+                <dt class="item"><h4>音効</h4></dt>
+                <dd class="yen"><h4>¥20,000~</h4></dd>
+                <dd class="in"><h4>（BGM,SE使用料含む）</h4></dd>
+            
+                <dt class="total"><h4><strong>TOTAL</strong></h4></dt>
+                <dd class="total_yen"><h4><strong>¥60,000~</strong></h4></dd>
+
+              </dl>
+            </div>  
+          
+          </div>        
+        </div>
+
+        <div class="slide" id="payment" data-menuanchor="payment">
+          <div class="slide-container">
+            <h1>ABOUT PAYMENT</h1>
+            <h2>お支払い方法について</h2>
+            <h3>お支払いについて</h3>
+            <p>
+              お支払いは弊社指定の口座へ銀行振り込みでお願いいたします。
+              ※振込み手数料はご負担願います。<br>
+              契約時に保証金として総制作費の20％をお支払い頂きます。<br>
+              撮影10日前までに上記保証金を引いた残りの制作費全額をお支払頂きます。
+            </p>
+            <h3>キャンセルについて</h3>
+            <p>
+              契約時にお支払頂いた着手金は、原則ご返金できません。<br>
+              全額ご入金後～撮影日前日までのキャンセル…総制作費の５０％を頂戴致します。<br>
+              当日のキャンセル…総制作費の100％を頂戴致します。<br>
+              ※自然現象、雨天等での撮影延期の場合は、
+              振替日を翌月までに設定して頂ければ追加料金は発生致しません。
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

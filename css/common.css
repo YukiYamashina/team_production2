@@ -1,0 +1,638 @@
+/*
+ * Author       : Yuki Yamashina
+ * Coding style : follows Google HTML/CSS Style Guide
+ *                https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+ */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v5/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v5/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NotoSans-hinted';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSans-hinted/NotoSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSans-hinted';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/NotoSans-hinted/NotoSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Sabado Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Sabado-Typefamily/Sabado-Regular.otf) format("opentype");
+}
+
+/* line 43, ../sass/common.scss */
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  /*
+    background-color: #c7f9f4;
+  */
+}
+
+/* line 52, ../sass/common.scss */
+body {
+  font-family: NotoSans-hinted;
+  width: 100%;
+}
+
+/*
+#cloud {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  z-index: 1000;
+}
+*/
+/******************************
+  #logo
+******************************/
+/* line 70, ../sass/common.scss */
+#logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8%;
+  z-index: 1000;
+  margin: 1% 0 0;
+}
+/* line 77, ../sass/common.scss */
+#logo img {
+  width: 100%;
+}
+
+/******************************
+  #gnav
+******************************/
+/* line 86, ../sass/common.scss */
+#gnav {
+  position: fixed;
+  z-index: 100;
+  width: 20%;
+  height: 90%;
+}
+/* line 92, ../sass/common.scss */
+#gnav > div.gnav-item {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+}
+/* line 97, ../sass/common.scss */
+#gnav > div.gnav-item img.gnav-icon-bg {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  opacity: 0.1;
+}
+/* line 109, ../sass/common.scss */
+#gnav a.gnav-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* line 121, ../sass/common.scss */
+#gnav > .about_us {
+  top: 15%;
+  left: 2%;
+}
+
+/* line 122, ../sass/common.scss */
+#gnav > .our_works {
+  top: 30%;
+  left: 2%;
+}
+
+/* line 123, ../sass/common.scss */
+#gnav > .price {
+  top: 45%;
+  left: 2%;
+}
+
+/* line 124, ../sass/common.scss */
+#gnav > .flow {
+  top: 60%;
+  left: 2%;
+}
+
+/* line 125, ../sass/common.scss */
+#gnav > .contact {
+  top: 75%;
+  left: 2%;
+}
+
+/* line 126, ../sass/common.scss */
+#gnav > .sitemap {
+  top: 90%;
+  left: 2%;
+}
+
+/* line 128, ../sass/common.scss */
+#gnav .about_us > a {
+  background: url(../images/icon/icon_aboutus.png);
+}
+
+/* line 129, ../sass/common.scss */
+#gnav .our_works > a {
+  background: url(../images/icon/icon_our_works.png);
+}
+
+/* line 130, ../sass/common.scss */
+#gnav .flow > a {
+  background: url(../images/icon/icon_flow.png);
+}
+
+/* line 131, ../sass/common.scss */
+#gnav .price > a {
+  background: url(../images/icon/icon_price.png);
+}
+
+/* line 132, ../sass/common.scss */
+#gnav .contact > a {
+  background: url(../images/icon/icon_contact.png);
+}
+
+/* line 133, ../sass/common.scss */
+#gnav .sitemap > a {
+  background: url(../images/icon/icon_sitemap.png);
+}
+
+/* line 135, ../sass/common.scss */
+#gnav > div.gnav-item > a {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+/* line 141, ../sass/common.scss */
+#gnav .about_us > a.active {
+  background: url(../images/icon/icon_aboutus_reverse.png);
+}
+
+/* line 142, ../sass/common.scss */
+#gnav .our_works > a.active {
+  background: url(../images/icon/icon_our_works_reverse.png);
+}
+
+/* line 143, ../sass/common.scss */
+#gnav .flow > a.active {
+  background: url(../images/icon/icon_flow_reverse.png);
+}
+
+/* line 144, ../sass/common.scss */
+#gnav .price > a.active {
+  background: url(../images/icon/icon_price_reverse.png);
+}
+
+/* line 145, ../sass/common.scss */
+#gnav .contact > a.active {
+  background: url(../images/icon/icon_contact_reverse.png);
+}
+
+/* line 146, ../sass/common.scss */
+#gnav .sitemap > a.active {
+  background: url(../images/icon/icon_sitemap_reverse.png);
+}
+
+/* line 148, ../sass/common.scss */
+#gnav > div.gnav-item > a.active {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+/* line 154, ../sass/common.scss */
+#gnav > div.gnav-item img.bg-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+  opacity: 0;
+}
+
+/* line 163, ../sass/common.scss */
+#gnav > div.gnav-item ul {
+  list-style-type: none;
+  position: absolute;
+  left: 75px;
+  z-index: 100;
+  display: none;
+}
+/* line 170, ../sass/common.scss */
+#gnav > div.gnav-item ul li:first-child {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 176, ../sass/common.scss */
+#gnav > div.gnav-item ul li > a {
+  font-size: 1.0em;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #222;
+  padding: 3px;
+  float: left;
+  clear: both;
+  width: 115px;
+  text-shadow: 1px 1px 1px #fff;
+}
+/* line 189, ../sass/common.scss */
+#gnav > div.gnav-item ul li > a:hover {
+  background-color: #fff;
+  color: #444;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 200, ../sass/common.scss */
+#gnav > .about_us ul {
+  top: -15px;
+}
+
+/* line 201, ../sass/common.scss */
+#gnav > .our_works ul {
+  top: 5px;
+}
+
+/* line 202, ../sass/common.scss */
+#gnav > .price ul {
+  top: -50px;
+}
+
+/* line 203, ../sass/common.scss */
+#gnav > .flow ul {
+  top: -5px;
+}
+
+/* line 204, ../sass/common.scss */
+#gnav > .contact ul {
+  top: -5px;
+}
+
+/* line 205, ../sass/common.scss */
+#gnav > .sitemap ul {
+  top: 10px;
+}
+
+/******************************
+  #menu
+******************************/
+/* line 212, ../sass/common.scss */
+#menu {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  height: 20px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 223, ../sass/common.scss */
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #555;
+  /*
+    background: #fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px; 
+            border-radius: 10px; 
+  */
+}
+/* line 233, ../sass/common.scss */
+#menu li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+}
+/* line 239, ../sass/common.scss */
+#menu li a:hover {
+  color: #000;
+  font-weight: bold;
+}
+/* line 244, ../sass/common.scss */
+#menu li a.active {
+  text-decoration: underline;
+}
+
+/* line 250, ../sass/common.scss */
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+
+/****************************************************************
+ * css for fullPage.js
+ ****************************************************************/
+/* line 259, ../sass/common.scss */
+html, body {
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 265, ../sass/common.scss */
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none;
+}
+
+/* line 276, ../sass/common.scss */
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  /* Safari<=5 Android<=3 */
+  -moz-box-sizing: border-box;
+  /* <=28 */
+  -ms-box-sizing: border-box;
+  /* <=28 */
+  -o-box-sizing: border-box;
+  /* <=28 */
+  box-sizing: border-box;
+}
+
+/* line 285, ../sass/common.scss */
+.fp-slide {
+  float: left;
+}
+
+/* line 289, ../sass/common.scss */
+.fp-slide, .fp-slidesContainer {
+  height: 100%;
+  display: block;
+}
+
+/* line 294, ../sass/common.scss */
+.fp-slides {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  -moz-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  -ms-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  -o-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out;
+}
+
+/* line 305, ../sass/common.scss */
+.fp-section.fp-table, .fp-slide.fp-table {
+  display: table;
+  width: 100%;
+}
+
+/* line 310, ../sass/common.scss */
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 317, ../sass/common.scss */
+.fp-slidesContainer {
+  float: left;
+  position: relative;
+}
+
+/* line 322, ../sass/common.scss */
+.fp-controlArrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+}
+
+/* line 332, ../sass/common.scss */
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+/* line 339, ../sass/common.scss */
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* line 345, ../sass/common.scss */
+.fp-scrollable {
+  overflow: scroll;
+}
+
+/* line 349, ../sass/common.scss */
+.fp-easing {
+  -webkit-transition: all 0.7s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  -moz-transition: all 0.7s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  -ms-transition: all 0.7s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  -o-transition: all 0.7s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.7s ease-out;
+}
+
+/* line 357, ../sass/common.scss */
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 365, ../sass/common.scss */
+#fp-nav.right {
+  right: 17px;
+}
+
+/* line 369, ../sass/common.scss */
+#fp-nav.left {
+  left: 17px;
+}
+
+/* line 373, ../sass/common.scss */
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+}
+
+/* line 380, ../sass/common.scss */
+.fp-slidesNav.bottom {
+  bottom: 17px;
+}
+
+/* line 384, ../sass/common.scss */
+.fp-slidesNav.top {
+  top: 17px;
+}
+
+/* line 389, ../sass/common.scss */
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 395, ../sass/common.scss */
+#fp-nav li,
+.fp-slidesNav li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+
+/* line 403, ../sass/common.scss */
+.fp-slidesNav li {
+  display: inline-block;
+}
+
+/* line 408, ../sass/common.scss */
+#fp-nav li a,
+.fp-slidesNav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 419, ../sass/common.scss */
+#fp-nav li .active span,
+.fp-slidesNav.active span {
+  background: #333;
+}
+
+/* line 424, ../sass/common.scss */
+#fp-nav span,
+.fp-slidesNav span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 436, ../sass/common.scss */
+.fp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px;
+}
+
+/* line 446, ../sass/common.scss */
+.fp-tooltip.right {
+  right: 20px;
+}
+
+/* line 450, ../sass/common.scss */
+.fp-tooltip.left {
+  left: 20px;
+}
+
+/******************************
+  #fullpage
+******************************/
+/* line 459, ../sass/common.scss */
+#fullpage {
+  margin: 0 auto;
+}
+
+/* line 463, ../sass/common.scss */
+.fp-controlArrow {
+  display: none;
+}
+
+/******************************
+  each section
+******************************/
+/* line 471, ../sass/common.scss */
+.section {
+  text-align: left;
+}
+/* line 474, ../sass/common.scss */
+.section .section-container {
+  width: 70%;
+  padding-left: 20%;
+  padding-right: 10%;
+}
+/* line 480, ../sass/common.scss */
+.section .slide-container {
+  width: 70%;
+  padding-left: 20%;
+  padding-right: 10%;
+}
+
+/* line 487, ../sass/common.scss */
+h1 {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 400%;
+}
+
+/* line 493, ../sass/common.scss */
+p {
+  font-size: 1.0em;
+}

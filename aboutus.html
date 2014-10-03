@@ -1,0 +1,235 @@
+<!doctype html>
+<!--
+    Type         : HTML5 format
+    file name    : aboutus.html
+    Author       : Naoko Kawase
+    Template     : Yuki Yamashina
+    Coding style : follows (partially) Google HTML/CSS Style Guide
+                   https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+-->
+<html lang="ja">
+
+  <head>
+
+    <!-- meta info and title part -->
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="UTF-8" />
+    <title>映像制作会社M＆F｜コンセプト</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="M&F" />
+    <meta name="keywords" content="movie,corporate site" />
+    <meta name="description" content="This is a corporate site of M&F" />
+
+    <!-- load style files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/aboutus.css">
+
+    <!-- load JavaScript files -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+      <script type="text/javascript">var console = { log: function() {} };</script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsBgImage: ['images/cb_background.jpg','images/cb_background.jpg','images/cb_background.jpg'],
+            anchors: ['concept', 'corporate-information', 'recruit'],
+            menu: '#menu',
+            css3: true,
+            scrollOverflow: true
+        });
+    });
+    </script>
+    <script src="js/jquery.bubble.js"></script>
+    <script src="js/jquery.elliptic_text.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.elliptic-text').ellipticText({
+              // You have to adjust the following parameters
+              ellipse     : true,  // elliptic function if true, hyperbolic function if false
+              trsvDiameter:  20,    // transverse diameter a
+              cnjgDiameter:  2,    // conjugate  diameter b
+              proportion  : 0.50,   // 
+              units       : '%'    // units for margin-left
+          });
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <h1 id="logo">
+      <a href="index.html" title="M&amp;F">
+        <img src="images/logo/logo.png" alt="M&amp;F" />
+      </a>
+    </h1>
+
+    <nav id="gnav">
+      <div class="gnav-item about_us">
+        <img src="images/icon/icon_aboutus_bg.png" alt="bg icon for about us" class="gnav-icon-bg">
+        <a href="aboutus.html" class="gnav-icon"></a>
+        <ul>
+          <li>About Us</li>
+          <li><a href="aboutus.html#concept">コンセプト</a></li>
+          <li><a href="aboutus.html#corporate-information">会社概要</a></li>
+          <li><a href="aboutus.html#recruit">求人</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item our_works">
+        <img src="images/icon/icon_our_works_bg.png" alt="bg icon for our works" class="gnav-icon-bg">
+        <a href="our_works.html" class="gnav-icon"></a>
+        <ul>
+          <li>Our Works</li>
+          <li><a href="our_works.html#our_works">事業実績</a></li>
+          <li><a href="our_works.html#gallery">ギャラリー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item price">
+        <img src="images/icon/icon_price_bg.png" alt="bg icon for price" class="gnav-icon-bg">
+        <a href="price.html" class="gnav-icon"></a>
+        <ul>
+          <li>Price</li>
+          <li><a href="price.html#estimate">お見積もり</a></li>
+          <li><a href="price.html#event">イベント</a></li>
+          <li><a href="price.html#pv">PV作成</a></li>
+          <li><a href="price.html#edit-only">編集のみの場合</a></li>
+          <li><a href="price.html#payment">お支払い</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item flow">
+        <img src="images/icon/icon_flow_bg.png" alt="bg icon for flow" class="gnav-icon-bg">
+        <a href="flow.html" class="gnav-icon"></a>
+        <ul>
+          <li>Flow</li>
+          <li><a href="flow.html#for-client">映像制作</a></li>
+          <li><a href="flow.html#flow">制作の流れ</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item contact">
+        <img src="images/icon/icon_contact_bg.png" alt="bg icon for contact" class="gnav-icon-bg">
+        <a href="contact.html" class="gnav-icon"></a>
+        <ul>
+          <li>Contact</li>
+          <li><a href="contact.html#contact">問い合わせ</a></li>
+          <li><a href="contact.html#privacy-policy">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="gnav-item sitemap">
+        <img src="images/icon/icon_sitemap_bg.png" alt="bg icon for sitemap" class="gnav-icon-bg">
+        <a href="sitemap.html" class="gnav-icon"></a>
+        <ul>
+          <li>Sitemap</li>
+          <li><a href="sitemap.html#sitemap">サイトマップ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="fullpage">
+
+      <ul id="menu">
+        <li data-menuanchor="concept" class="active"><a href="#concept">CONCEPT
+        </a></li>
+        <li data-menuanchor="corporate-information"><a href="#corporate-information">CORPORATE<br>INFORMATION</a></li>
+        <li data-menuanchor="recruit"><a href="#recruit">RECRUIT</a></li>
+      </ul>
+
+      <div class="section">
+        <div class="slide" id="concept" data-menuanchor="concept">
+          <div class="slide-container">
+            <div class="left-contents">
+              <h1>CONCEPT</h1>
+              <h2>MOVIE FACTORYの紹介</h2>
+              <p>
+                優れたシナリオと、クォリティの高い映像で<br>
+                クライアントの思いを<strong>カタチ</strong>にします。
+              </p>
+            </div>
+          
+            <div class="right-contents">
+              <ul class="elliptic-text">
+                <li><h3>株式会社ムービーファクトリー</h3></li>
+                <li>　</li>
+                <li>テレビ番組やＣＭ、企業や商品のＰＲビデオ、ＤＶＤといった映像制作を中心に</li>
+                <li>ビジュアルにかかわる様々なメディアを駆使して</li>
+                <li>クライアントのご要望にきめこまかく応えるクリエイティブ集団です。</li>
+                <li>　</li>
+                <li>企画から撮影、編集までクォリティにこだわった映像作品の制作はもとより、</li>
+                <li>お客さまのこだわりやご予算に応じたかゆいところに手の届くご提案で、</li>
+                <li>突破力と訴求力のある「伝わる」映像を作ります。</li>
+                <li>　</li>
+                <li>作品の大小にかかわらず企画から仕上げまで1本1本に丁寧に制作しています。</li>
+                <li>クライアントにとって使いやすく、視聴者の印象に残る映像を</li>
+                <li>ご提案・プランニング・制作いたします。</li>
+                <div class="photo">
+                  <img src="images/aboutus/photo_vision.png" alt="concept photo">
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" id="corporate-information" data-menuanchor="corporate-information">
+          <div class="slide-container">
+            <h1>CORPORATE<br> INFORMATION</h1>
+            <dl class="two-column">
+              <dt>会社名</dt>
+              <dd>M&amp;F</dd>
+              <dt>所在地</dt>
+              <dd>〒601-8182　京都市南区上鳥羽北島田町93番</dd>
+              <dt>電話番号</dt>
+              <dd>075-682-3900</dd>
+              <dt>FAX番号</dt>
+              <dd>075-682-3933</dd>
+              <dt>営業時間</dt>
+              <dd>10:00-18:00</dd>
+              <dt>URL</dt>
+              <dd>http://www.mf.com</dd>
+              <dt>E-Mail</dt>
+              <dd>info@mf.com</dd>
+              <dt>事業内容</dt>
+              <dd>プロフィールビデオ、学校ビデオ撮影、PRビデオ撮影、</dd>
+              <dt>　</dt>
+              <dd>卒業ビデオ撮影、結婚式ビデオ撮影</dd>
+            </dl>
+            <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m20!1m8!1m3!1d3269.622771387341!2d135.74228853071082!3d34.96606238112951!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x600105faf20a7d7f%3A0xb4df629e5f2af125!2z5Lqs6YO95bqc5Lqs6YO95biC5Y2X5Yy65LiK6bOl57695YyX5bO255Sw55S677yZ77yT!3m2!1d34.9660624!2d135.7444343!5e0!3m2!1sja!2sjp!4v1407159071958" width="350px" height="250px" frameborder="0" style="border:0; margin-left: 40px;"></iframe></div>
+            </div>
+        </div>
+
+        <div class="slide" id="recruit" data-menuanchor="recruit">
+          <div class="slide-container">
+            <h1>RECRUIT</h1>
+            <dl>
+              <dt>職種</dt>
+              <dd>アシスタントディレクター</dd>
+              <dt>仕事内容</dt>
+              <dd>映像制作現場におけるディレクターのアシスタント業務</dd>
+              <dt>求めるスキル</dt>
+              <dd>体力に自信のある方。映像などに興味ある方</dd>
+              <dt>雇用形態</dt>
+              <dd>契約社員(勤務状況を見て正社員雇用も検討）</dd>
+              <dt>勤務地</dt>
+              <dd>京都</dd>
+              <dt>給与</dt>
+              <dd>月収15万円～交通費全額支給</dd>
+              <dt>備考</dt>
+              <dd>経験者問いません。やる気のある方待っています。</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

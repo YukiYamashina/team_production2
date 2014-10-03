@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul {
+  list-style-type: none;
+}
+
+#concept .left-contents {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 20%;
+}
+
+#concept .left-contents h2 {
+  margin-top: 20%;
+}
+
+#concept .left-contents p {
+  margin-top: 1%;
+}
+
+#concept .right-contents {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 60%;
+}
+
+#concept .photo img {
+  position: absolute;
+  left: 30%;
+   width: 10%;
+}
+
+#corporate-information h1 {
+  width: 10%;
+  position: relative;
+  left: 0%;
+}
+
+#corporate-information dl {
+	width: 100%;
+/*
+  position: absolute;
+  top: 23%;
+  left: 40%;
+*/
+}
+
+#corporate-information dl dt {
+	float: left;
+	clear: both;
+  width: 15%;
+/*   position: relative; */
+/*   left: 17%; */
+}
+
+#corporate-information dl dd {
+	width: 70%;
+/*
+  position: relative;
+  left: -4%;
+*/
+  margin-left: 60px;
+  padding-bottom: 6px;
+}
+
+#corporate-information #map {
+  position: relative;
+  left: 40%;
+}
+
+#corporate-information .slide-container {
+/*
+  position: relative;
+  top: 10%;
+*/
+}
+
+#corporate-information #map {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  margin-top: 40px;
+}
+
+#corporate-information h1 {
+  padding-top: 10%;
+}
+
+#recruit h1 {
+  padding-top: 30%;
+}
+
+#recruit dl {
+  position: relative;
+}
+
+#recruit dl dt {
+  position: relative;
+  top: -220px;
+  width: 25%;
+  text-align: left;
+}
+
+#recruit dl dd {
+  position: relative;
+  top: -245px;
+  left: 35%;
+	width: 50%;
+  text-align: left;
+}
